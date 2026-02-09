@@ -22,8 +22,8 @@ You → Random Peer → VPN Server → Internet
 
 ## How It Can Work
 
-1. **Peer Discovery**: All users publish public keys to a DHT
-2. **Anonymous Matching**: You broadcast an encrypted "I need a relay" message to everyone. Only your assigned peer can decrypt it. Everyone else sees noise.
+1. **Peer Discovery**: All users publish public keys to server or DHT
+2. **Anonymous Matching**: Peers use the server or DHT to publish asymmetrically encrypted messages to each other to negotiate connections
 3. **Hole Punching**: You and your peer exchange IPs (encrypted), then establish a direct UDP connection through NAT
 4. **Relay**: Your VPN traffic flows through the peer to the VPN server
 
